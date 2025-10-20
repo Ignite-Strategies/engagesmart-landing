@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Data Use - EngageSmart</title>
+  <meta name="description" content="How EngageSmart uses information received from Google APIs - Limited Use Policy compliance.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'es-blue': '#2563eb',
+            'es-blue-dark': '#1e40af',
+            'es-slate': '#64748b'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Content -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-4xl font-bold mb-8">Use of Information Received from Google APIs</h1>
+
+    <div class="bg-blue-50 border-l-4 border-es-blue p-6 mb-8">
+      <p class="font-semibold">EngageSmart's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" class="text-es-blue hover:underline">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </div>
+
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Consent first</h2>
+        <p class="text-gray-700">We connect to Google APIs (Gmail, YouTube, Google Ads) only when you explicitly authorize an integration.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Scope minimization</h2>
+        <p class="text-gray-700">We request the minimum scopes needed for the feature you enable.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Purpose limitation</h2>
+        <p class="text-gray-700">We use Google-sourced data only to provide user-facing features visible in EngageSmart (e.g., send a campaign you initiate; show analytics you request).</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">No selling / limited sharing</h2>
+        <p class="text-gray-700">We do not sell Google-sourced data. We do not share it with third parties except processors required to operate the service (under contract) or when you direct us to (e.g., publish a video) or as required by law.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">No targeted ads using your Google data</h2>
+        <p class="text-gray-700">We do not use Google-sourced personal data to build interest profiles or for ad targeting.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">No training generalized AI models on your Google data</h2>
+        <p class="text-gray-700">Unless you explicitly authorize it and we clearly disclose it.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Security</h2>
+        <ul class="list-disc ml-6 space-y-2 text-gray-700">
+          <li>Encryption in transit (HTTPS/TLS)</li>
+          <li>Token storage and other sensitive data encrypted at rest</li>
+          <li>Least-privilege access controls</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Disconnect & deletion</h2>
+        <p class="text-gray-700">Disconnect any Google integration in <strong>Account → Integrations</strong>; delete your account/data in <strong>Account → Delete Account</strong> or email <a href="mailto:support@engagesmart.app" class="text-es-blue hover:underline">support@engagesmart.app</a>.</p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+        <h2 class="text-2xl font-bold mb-3">Policy compliance</h2>
+        <p>Our use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" class="text-es-blue hover:underline">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Contact</h2>
+        <p><a href="mailto:support@engagesmart.app" class="text-es-blue hover:underline font-semibold">support@engagesmart.app</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Load navigation and footer
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>

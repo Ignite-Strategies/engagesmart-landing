@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - EngageSmart</title>
+  <meta name="description" content="Learn about EngageSmart - born in F3, built for community impact.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'es-blue': '#2563eb',
+            'es-blue-dark': '#1e40af',
+            'es-slate': '#64748b',
+            'es-purple': '#7c3aed'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-es-blue to-es-blue-dark text-white py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-5xl font-bold mb-6">About EngageSmart</h1>
+      <p class="text-xl text-blue-100">
+        Born in F3. Built for community impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+      <div class="prose prose-lg">
+        <p class="text-lg text-gray-700 mb-6">
+          We started in F3—a nationwide network of free, peer-led men's workouts. What began as fitness became something deeper: a way to build community, develop leaders, and accelerate impact.
+        </p>
+        <p class="text-lg text-gray-700 mb-6">
+          As we ran events—fundraisers, volunteer days, challenges—we realized something critical: <strong>these weren't just fundraisers. They were community accelerators.</strong>
+        </p>
+        <p class="text-lg text-gray-700 mb-6">
+          But we had a problem. The tools we needed didn't exist. We were stuck juggling spreadsheets, Gmail threads, and disconnected platforms—trying to answer one simple question: <em>Who showed up? Who engaged? And who's ready to step up next?</em>
+        </p>
+        <p class="text-lg text-gray-700 mb-6">
+          So we built EngageSmart.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+      <p class="text-xl text-gray-700 mb-8">
+        Help community-led organizations <strong>measure belonging</strong> and turn it into action.
+      </p>
+      <p class="text-lg text-es-slate max-w-2xl mx-auto">
+        Because momentum matters more than moments. And when you measure what matters, you can build something that lasts.
+      </p>
+    </div>
+  </section>
+
+  <!-- What We Believe -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-12 text-center">What We Believe</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-es-blue">
+          <h3 class="text-xl font-bold mb-3">Community > Customers</h3>
+          <p class="text-gray-700">
+            The best organizations don't build customer lists. They build communities. We help you treat people like humans, not contacts.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-es-purple">
+          <h3 class="text-xl font-bold mb-3">Engagement > Transactions</h3>
+          <p class="text-gray-700">
+            A donation is just a moment. Engagement is momentum. We help you build relationships that compound over time.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h3 class="text-xl font-bold mb-3">Impact > Metrics</h3>
+          <p class="text-gray-700">
+            Vanity metrics lie. We help you measure what actually matters: belonging, action, and lasting change.
+          </p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-yellow-500">
+          <h3 class="text-xl font-bold mb-3">Build in Public</h3>
+          <p class="text-gray-700">
+            We're learning as we go. Early users get free access and help shape the product. No gatekeeping.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team / Contact -->
+  <section class="py-20 bg-es-blue text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold mb-6">Let's Build Together</h2>
+      <p class="text-xl text-blue-100 mb-8">
+        We're in early access. Free to use. Built with feedback from real community leaders.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://app.engagesmart.app" class="inline-block bg-white hover:bg-gray-100 text-es-blue font-bold py-3 px-8 rounded-lg transition duration-300">
+          Start free →
+        </a>
+        <a href="mailto:support@engagesmart.app" class="inline-block border-2 border-white hover:bg-white hover:text-es-blue text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+          Get in touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Load navigation and footer
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
+

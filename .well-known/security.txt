@@ -1,0 +1,5 @@
+Contact: mailto:security@engagesmart.app
+Expires: 2026-10-20T00:00:00Z
+Preferred-Languages: en
+Policy: https://engagesmart.app/security.html
+

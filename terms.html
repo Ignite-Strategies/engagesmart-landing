@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service - EngageSmart</title>
+  <meta name="description" content="EngageSmart Terms of Service - Acceptable use, content ownership, and service terms.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'es-blue': '#2563eb',
+            'es-blue-dark': '#1e40af',
+            'es-slate': '#64748b'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Content -->
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h1 class="text-4xl font-bold mb-2">Terms of Service</h1>
+    <p class="text-es-slate mb-8">Effective date: October 20, 2025</p>
+
+    <div class="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-200">
+      <p class="font-semibold">By using EngageSmart, you agree to these Terms.</p>
+    </div>
+
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Acceptable use</h2>
+        <p class="text-gray-700">No spam, unlawful or abusive activity, or interference with the service. Respect unsubscribe/opt-out rules and sending limits.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Your content & data</h2>
+        <p class="text-gray-700">You own your content. You grant us a license to host, process, transmit, and display it as needed to operate the service and integrations you enable.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Integrations</h2>
+        <p class="text-gray-700">You are responsible for complying with third-party terms (e.g., Google API Services, YouTube, Google Ads, Eventbrite, Stripe, Slack).</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Payment</h2>
+        <p class="text-gray-700">Early Access is free. If pricing changes, we'll post updates with notice.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Disclaimers</h2>
+        <p class="text-gray-700">Service is provided "as is." To the extent permitted by law, we disclaim warranties of merchantability, fitness, and non-infringement.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Liability limit</h2>
+        <p class="text-gray-700">To the extent permitted by law, our aggregate liability is limited to amounts you paid in the prior 12 months.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Termination</h2>
+        <p class="text-gray-700">You may cancel anytime. We may suspend/terminate for risk, abuse, or noncompliance.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Governing law</h2>
+        <p class="text-gray-700">Commonwealth of Virginia, without regard to conflicts principles.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold mb-3">Contact</h2>
+        <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+          <p>IgniteStrategies LLC d/b/a EngageSmart<br>
+          2604 N. George Mason Dr., Arlington, VA 22207<br>
+          <a href="mailto:support@engagesmart.app" class="text-es-blue hover:underline">support@engagesmart.app</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script>
+    // Load navigation and footer
+    fetch('/components/nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      });
+
+    fetch('/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+</body>
+</html>
