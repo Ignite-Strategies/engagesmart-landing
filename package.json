@@ -1,0 +1,25 @@
+{
+  "name": "engagesmart-landing",
+  "version": "1.0.0",
+  "description": "EngageSmart landing page - static HTML site with TailwindCSS",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build step required'",
+    "start": "vercel dev"
+  },
+  "keywords": [
+    "engagesmart",
+    "community",
+    "engagement",
+    "crm",
+    "tailwindcss",
+    "static-site"
+  ],
+  "author": "EngageSmart",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
+
